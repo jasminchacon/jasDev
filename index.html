@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio personal de Jasmin Chacon, Frontend Developer Junior. Proyectos, skills, formacion y contacto." />
+    <meta name="theme-color" content="#071C38" />
+    <meta property="og:title" content="Jas Dev | Frontend Developer Junior" />
+    <meta property="og:description" content="Landing portfolio moderna y responsive para mostrar proyectos frontend." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/images/hero-character.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jas Dev | Frontend Developer Junior" />
+    <meta name="twitter:description" content="Portfolio personal de Jasmin Chacon." />
+    <title>Jas Dev | Portfolio Frontend</title>
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script>
+      window.tailwind = {
+        config: {
+          theme: {
+            extend: {
+              colors: {
+                navy: '#071C38',
+                deep: '#06162C',
+                blue: '#0B3B78',
+                sky: '#21A8FF',
+                muted: '#B7C3D4'
+              },
+              fontFamily: { poppins: ['Poppins', 'sans-serif'] }
+            }
+          }
+        }
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <header class="site-header" id="site-header">
+      <nav class="nav shell" aria-label="Navegacion principal">
+        <a class="brand" href="#hero" aria-label="Jas Dev inicio">
+          <span>JAS</span><span>DEV</span>
+        </a>
+
+        <div class="nav__desktop" role="menubar">
+          <a href="#about" role="menuitem">Sobre mí</a>
+          <a href="#skills" role="menuitem">Skills</a>
+          <a href="#projects" role="menuitem">Proyectos</a>
+          <a href="#education" role="menuitem">Formación</a>
+          <a href="#contact" role="menuitem">Contacto</a>
+        </div>
+
+        <div class="nav__actions">
+          <a class="btn btn--primary" href="#contact">Contáctame</a>
+          <a class="btn btn--outline" href="./README.md" download>Descargar CV</a>
+        </div>
+
+        <button class="hamburger" type="button" aria-label="Abrir menu" aria-controls="mobile-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+
+      <div class="mobile-panel" id="mobile-menu" role="dialog" aria-modal="false" aria-label="Menu movil">
+        <a href="#about">Sobre mí</a>
+        <a class="is-highlight" href="#skills">Skills</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#education">Formación</a>
+        <a href="#contact">Contacto</a>
+        <a class="btn btn--primary" href="#contact">Contáctame</a>
+        <a class="btn btn--outline" href="./assets/pdf/curriculum.pdf" download>Descargar CV</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="hero" aria-labelledby="hero-title">
+        <div class="shell hero__grid">
+          <p class="hero__role reveal">FRONTEND<br />DEVELOPER<br />JUNIOR</p>
+          <div class="hero__visual reveal">
+            <span class="hero__backtext" aria-hidden="true">JAS<br />DEV</span>
+            <img src="./assets/images/hero-character.png" width="515" height="613" alt="Ilustracion de Jasmin sentada en una silla" fetchpriority="high" />
+          </div>
+          <h1 class="sr-only" id="hero-title">Jas Dev Frontend Developer Junior</h1>
+        </div>
+      </section>
+
+      <section class="skills section section--dark" id="skills" aria-labelledby="skills-title">
+        <div class="shell skills__layout reveal">
+          <div>
+            <h2 class="section-title" id="skills-title">Skills</h2>
+            <p class="section-subtitle">Herramientas que uso y sigo perfeccionando</p>
+          </div>
+          <ul class="tech-grid" aria-label="Tecnologias">
+            <li class="tech-card tech-card--html"><i class="fa-brands fa-html5"></i><span>HTML</span></li>
+            <li class="tech-card tech-card--css"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></li>
+            <li class="tech-card tech-card--bootstrap"><i class="fa-brands fa-bootstrap"></i><span>Bootstrap</span></li>
+            <li class="tech-card tech-card--tailwind"><span class="tailwind-mark">~</span><span>tailwindcss</span></li>
+            <li class="tech-card tech-card--js"><i class="fa-brands fa-js"></i><span>Javascript</span></li>
+            <li class="tech-card tech-card--react"><i class="fa-brands fa-react"></i><span>React</span></li>
+            <li class="tech-card tech-card--github"><i class="fa-brands fa-github"></i><span>Github</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about section section--blue" id="about" aria-labelledby="about-title">
+        <div class="shell about__grid">
+          <div class="about__image reveal">
+            <img src="./assets/images/img3.png" width="900" height="1280" alt="Ilustracion de Jasmin usando audifonos" loading="lazy" />
+          </div>
+          <div class="about__content reveal">
+            <h2 class="section-title" id="about-title">Sobre Mí</h2>
+            <p class="about__lead">Me interesa entender el porqué detrás de cada decisión y seguir mejorando en cada proyecto.</p>
+            <p class="about__copy">Estoy dando mis primeros pasos como frontend developer, enfocándome en crear experiencias claras, funcionales y bien estructuradas.</p>
+            <h3>Habilidades blandas</h3>
+            <ul class="soft-list">
+              <li><span>Autonomía</span><b></b></li>
+              <li><span>Adaptabilidad</span><b></b></li>
+              <li><span>Comunicación</span><b></b></li>
+              <li><span>Trabajo en equipo</span><b></b></li>
+            </ul>
+            <div class="section-actions">
+              <a class="btn btn--primary" href="#contact">Contáctame</a>
+              <a class="btn btn--outline" href="./README.md" download>Descargar CV</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section section--dark" id="projects" aria-labelledby="projects-title">
+        <div class="shell reveal">
+          <div class="section-heading section-heading--center">
+            <h2 class="section-title" id="projects-title">Proyectos</h2>
+            <p class="section-subtitle">Cada proyecto representa un desafío distinto y una oportunidad para aplicar lo que voy aprendiendo.</p>
+          </div>
+          <div class="swiper project-swiper" aria-label="Carrusel de proyectos">
+            <div class="swiper-wrapper">
+              <article class="swiper-slide project-card">
+                <img src="./assets/images/project-bancoestado.png" alt="Landing page BancoEstado" loading="lazy" />
+                <div class="project-card__body">
+                  <div class="badges"><span>HTML</span><span>CSS</span></div>
+                  <h3>BancoEstado<br />Landing page</h3>
+                  <a class="btn btn--primary btn--small" href="#" aria-label="Ver proyecto BancoEstado">Ver proyecto</a>
+                </div>
+              </article>
+              <article class="swiper-slide project-card">
+                <img src="./assets/images/project-bancoestado.png" alt="Landing page BancoEstado version responsive" loading="lazy" />
+                <div class="project-card__body">
+                  <div class="badges"><span>HTML</span><span>CSS</span></div>
+                  <h3>BancoEstado<br />Landing page</h3>
+                  <a class="btn btn--primary btn--small" href="#">Ver proyecto</a>
+                </div>
+              </article>
+              <article class="swiper-slide project-card">
+                <img src="./assets/images/project-bancoestado.png" alt="Landing page BancoEstado interfaz" loading="lazy" />
+                <div class="project-card__body">
+                  <div class="badges"><span>HTML</span><span>CSS</span></div>
+                  <h3>BancoEstado<br />Landing page</h3>
+                  <a class="btn btn--primary btn--small" href="#">Ver proyecto</a>
+                </div>
+              </article>
+              <article class="swiper-slide project-card">
+                <img src="./assets/images/project-bancoestado.png" alt="Proyecto frontend BancoEstado" loading="lazy" />
+                <div class="project-card__body">
+                  <div class="badges"><span>HTML</span><span>CSS</span></div>
+                  <h3>BancoEstado<br />Landing page</h3>
+                  <a class="btn btn--primary btn--small" href="#">Ver proyecto</a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="education section section--blue" id="education" aria-labelledby="education-title">
+        <div class="shell reveal">
+          <div class="section-heading section-heading--center">
+            <h2 class="section-title" id="education-title">Formación</h2>
+            <p class="section-subtitle">Me he formado a través de cursos y práctica autodidacta, reforzando mis conocimientos con proyectos reales.</p>
+          </div>
+          <div class="education-grid">
+            <article class="education-card">
+              <img src="./assets/images/desarrollo web.jpeg" alt="Curso Coderhouse desarrollo web" loading="lazy" />
+              <h3>Desarrollo web</h3><p>CoderHouse</p><time datetime="2024">2024</time>
+            </article>
+            <article class="education-card">
+              <img src="./assets/images/JS.jpeg" alt="Curso Coderhouse desarrollo web" loading="lazy" />
+              <h3>Desarrollo web</h3><p>CoderHouse</p><time datetime="2025">2025</time>
+            </article>
+            <article class="education-card">
+              <img src="./assets/images/frontend.jpeg" alt="Curso Coderhouse desarrollo web" loading="lazy" />
+              <h3>Desarrollo web</h3><p>CoderHouse</p><time datetime="2026">2026</time>
+            </article>
+            <article class="education-card">
+              <img src="./assets/images/react.png" alt="Curso Coderhouse desarrollo web" loading="lazy" />
+              <h3>Desarrollo web</h3><p>CoderHouse</p><time datetime="2026">2026</time>
+            </article>
+          </div>
+          <div class="section-actions section-actions--center">
+            <a class="btn btn--primary" href="#contact">Contáctame</a>
+            <a class="btn btn--outline" href="./README.md" download>Descargar CV</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section section--dark" id="contact" aria-labelledby="contact-title">
+        <div class="shell contact__grid">
+          <div class="contact__image reveal">
+            <img src="./assets/images/contact-character.png" width="400" height="840" alt="Ilustracion de Jasmin hablando por telefono" loading="lazy" />
+          </div>
+          <div class="contact__content reveal">
+            <h2 class="section-title" id="contact-title">Hablemos</h2>
+            <p class="section-subtitle">Estoy abierta a nuevas oportunidades, colaboraciones o simplemente conversar sobre desarrollo frontend. Puedes escribirme y con gusto te responderé.</p>
+            <form class="contact-form" id="contact-form" novalidate>
+              <label><span>Nombre</span><input type="text" name="name" placeholder="Nombre" autocomplete="name" required /></label>
+              <label><span>Email</span><input type="email" name="email" placeholder="Email" autocomplete="email" required /></label>
+              <label><span>Mensaje</span><textarea name="message" placeholder="Mensaje" rows="6" required></textarea></label>
+              <p class="form-message" role="status" aria-live="polite"></p>
+              <button class="btn btn--primary" type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer__inner">
+        <a class="brand" href="#hero" aria-label="Volver al inicio"><span>JAS</span><span>DEV</span></a>
+        <div class="footer__social">
+          <a href="https://github.com/jasminchacon" target="_blank" rel="noopener" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/jasmincornelis/" target="_blank" rel="noopener" aria-label="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>© 2026. Todos los derechos reservados. JASMIN CHACÓN</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/app.js" defer></script>
+  </body>
+</html>
